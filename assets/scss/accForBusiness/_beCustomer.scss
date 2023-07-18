@@ -1,0 +1,10 @@
+#beCustomer {
+
+    background-color: $pink;
+    padding-top: 100px;
+    background-image: url("../images/accounts.jpg");
+    background-position: 100% 0;
+    padding-bottom: 100px;
+
+    @include backgroundPhotoSettings;
+}

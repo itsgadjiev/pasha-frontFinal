@@ -1,0 +1,35 @@
+#innovative-solvings {
+    margin-top: 96px;
+    background-image: url('../images/online-bank.png');
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: 739px;
+    background-size: contain;
+
+}
+
+.section-header-wrapper-innertext {
+    h5 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+    }
+
+    p {
+        vertical-align: baseline;
+        font-size: 18px;
+        color: grey;
+        font-weight: 400;
+        padding-bottom: 20px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    #innovative-solvings {
+        background-image: none;
+
+
+    }
+}

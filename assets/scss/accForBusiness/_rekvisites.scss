@@ -1,0 +1,32 @@
+.rekvisites-card-inner {
+    background-color: #fff;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, .07);
+    padding: 20px;
+
+}
+
+.rekvisites-card-inner-icon {
+    font-size: 60px;
+    padding-left: 40px;
+    color: $green;
+}
+
+.rekvisites-cards-wrapper {
+    padding-bottom: 20px;
+    gap: 20px;
+}
+
+
+
+.accForBusinessAdvantages-icons {
+    color: $green;
+    font-size: 60px;
+}
+
+.accForBusinessAdvantages-card {
+    margin-bottom: 20px;
+}
+
+.be-customer-button {
+    @include be-customer-button;
+}

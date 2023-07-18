@@ -1,0 +1,29 @@
+#howToStarBusiness {
+    flex-direction: column;
+
+
+    justify-content: center;
+    background-color: #4e5251;
+    color: #fff;
+    background-image: url(../images/kob-bg.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 456px;
+}
+
+.howToStarBusiness-innerText {
+
+    margin-right: 100px;
+}
+
+.how-to-start-business {
+    padding: 60px 0;
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 400;
+}
+
+.howToStarBusiness-innerText-wrapper {
+    margin-bottom: 70px;
+}

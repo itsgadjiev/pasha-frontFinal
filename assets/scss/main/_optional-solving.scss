@@ -1,0 +1,68 @@
+.section-header-h {
+    @include section-header-h;
+
+}
+
+.section-header-wrapper {
+    @include section-header-wrapper;
+}
+
+.optional-solving-card {
+    margin-top: 20px;
+    width: 95%;
+    border-radius: 8px;
+    min-width: 311px;
+    padding: 24px 24px 16px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, .07);
+
+
+    .optional-solvings-card-icon {
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: $green;
+    }
+
+    h6 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            color: $grey;
+            padding-top: 10px;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 20px;
+            letter-spacing: .25px;
+        }
+    }
+
+    ul li:before {
+        content: "\2713";
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+        color: $green;
+
+    }
+
+    a {
+        @include read-more-main-mixin;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .optional-solvings-cards {
+
+        gap: 20px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 24px;
+    }
+}

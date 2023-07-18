@@ -1,0 +1,593 @@
+@charset "UTF-8";
+body {
+  background-color: #FAFAFA;
+}
+
+.wrap-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap-col {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.container-95 {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.nowrap-row {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.section-header-wrapper {
+  padding-bottom: 30px;
+}
+
+.read-more-main {
+  display: inline-block;
+  font-size: 15px;
+  color: #058d66;
+}
+
+.green-span {
+  color: #058d66;
+}
+
+.dnone-large {
+  display: none;
+}
+
+.dflex-large {
+  display: flex;
+}
+
+.dblock-large {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .scroll-on-responsive {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 24px;
+    gap: 20px;
+  }
+  .dnone-small {
+    display: none;
+  }
+  .dflex-small {
+    display: flex;
+  }
+  .dblock-small {
+    display: block;
+  }
+}
+.section-header-h-accForBusiness {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: unset !important;
+  font-weight: 350;
+}
+
+.section-header-p-accForBusiness {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  width: 60%;
+}
+
+header {
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+}
+
+.nav-res-dnone {
+  display: none;
+}
+
+.header-wrapper {
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-navigation {
+  align-items: center;
+  display: flex;
+  padding-left: 30px;
+}
+.header-navigation ul {
+  list-style: none;
+}
+.header-navigation ul a {
+  text-decoration: none;
+  padding-right: 15px;
+  color: rgba(0, 0, 0, 0.38);
+}
+.header-navigation ul a:hover {
+  color: rgba(0, 0, 0, 0.411);
+}
+
+.logo {
+  width: 150px;
+}
+.logo img {
+  width: 100%;
+}
+
+.nav-dropdown {
+  background-color: #058d66;
+  color: white;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .nav-res-dnone {
+    display: block;
+  }
+  .header-navigation {
+    display: none;
+  }
+  .active-nav {
+    display: none;
+  }
+  .nav-dropdown {
+    color: grey;
+    background-color: rgba(128, 128, 128, 0) !important;
+    border: none;
+  }
+  .section-header-wrapper {
+    width: 100% !important;
+  }
+}
+.modal {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.section-header-h {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.25px;
+}
+
+.section-header-wrapper {
+  width: 50%;
+}
+
+.optional-solving-card {
+  margin-top: 20px;
+  width: 95%;
+  border-radius: 8px;
+  min-width: 311px;
+  padding: 24px 24px 16px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.07);
+}
+.optional-solving-card .optional-solvings-card-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #058d66;
+}
+.optional-solving-card h6 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.optional-solving-card ul {
+  list-style: none;
+}
+.optional-solving-card ul li {
+  color: rgba(0, 0, 0, 0.38);
+  padding-top: 10px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+.optional-solving-card ul li:before {
+  content: "✓";
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  color: #058d66;
+}
+.optional-solving-card a {
+  display: inline-block;
+  font-size: 15px;
+  color: #058d66;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .optional-solvings-cards {
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 24px;
+  }
+}
+#improve-business {
+  padding-top: 120px;
+}
+
+.improve-business-card-inner {
+  background-image: url("../images/pos-terminal.png");
+  padding: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-color: antiquewhite;
+}
+
+.improve-business-card-inner {
+  height: 300px;
+}
+
+.inner {
+  height: 100%;
+  justify-content: space-between;
+}
+
+.improve-business-card-inner {
+  margin: 5px;
+}
+
+.improve-business-cards-second-row {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .res-business-card {
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+  }
+}
+#innovative-solvings {
+  margin-top: 96px;
+  background-image: url("../images/online-bank.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 739px;
+  background-size: contain;
+}
+
+.section-header-wrapper-innertext h5 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.section-header-wrapper-innertext p {
+  vertical-align: baseline;
+  font-size: 18px;
+  color: grey;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  #innovative-solvings {
+    background-image: none;
+  }
+}
+#business-plans {
+  margin: 100px 0;
+}
+
+.business-plans {
+  display: block;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.business-plans-wrapper-card {
+  background-color: #fff;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .business-plans-wrapper-card .business-plans-wrapper-card {
+    padding: 0px;
+    margin: 0;
+  }
+}
+.business-plans-wrapper-card .container h4 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.business-plans-wrapper-card .container .business-plans-wrapper-card-image {
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.07);
+}
+.business-plans-wrapper-card .container .business-plans-wrapper-card-image img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .business-plans-wrapper-card .container .business-plans-wrapper-card-image img {
+    width: unset;
+  }
+}
+.business-plans-wrapper-card .container ul {
+  list-style: none;
+}
+.business-plans-wrapper-card .container ul li {
+  color: rgba(0, 0, 0, 0.38);
+  padding-top: 10px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+.business-plans-wrapper-card .container ul li:before {
+  content: "✓";
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  color: #058d66;
+}
+.business-plans-wrapper-card .container button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.business-card-price {
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 72px;
+  letter-spacing: -0.5px;
+}
+
+.currency-symb {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.monthsly {
+  font-weight: 300;
+}
+
+.business-plans-wrapper-card-cap {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  font-weight: 600;
+}
+
+#mobile-app-main {
+  padding-top: 100px;
+  background-color: white !important;
+  background-image: url("../images/mobile.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: contain;
+}
+
+.mobile-app-main-inner-images .playmarkets-wrapper a {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.mobile-app-main-inner-images .playmarkets-wrapper a img {
+  width: 100%;
+  height: 50px;
+}
+
+.qr-code {
+  height: 120px;
+  margin-left: 20px;
+}
+
+.mobile-app-main-inner h5 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+.mobile-app-main-inner p {
+  margin: 40px 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  #mobile-app-main {
+    background-image: unset;
+  }
+  .playmarkets-wrapper {
+    width: 40%;
+  }
+}
+footer {
+  background-color: white !important;
+}
+
+.footer-logo {
+  width: 100%;
+}
+.footer-logo img {
+  width: 50%;
+}
+
+.footer-contact {
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+
+.footer-redirects-row .col-3 ul {
+  padding-left: 0;
+}
+.footer-redirects-row .col-3 ul li {
+  list-style: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.38);
+  padding: 3px;
+  cursor: pointer;
+}
+.footer-redirects-row .col-3 ul li:hover {
+  color: rgba(133, 129, 129, 0.753);
+}
+
+.footer-icon {
+  padding-top: 10px;
+  font-size: 30px;
+  padding-right: 20px;
+}
+
+.footer-copyright {
+  padding: 20px;
+  border-top: 1px solid rgba(128, 128, 128, 0.164);
+}
+
+.grey-span {
+  color: rgba(0, 0, 0, 0.38);
+}
+
+@media (max-width: 768px) {
+  .icons {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+#last-news {
+  padding: 150px 0px;
+}
+
+@media (max-width: 768px) {
+  #last-news {
+    padding: 30px 0px;
+  }
+}
+.exchange-card-image {
+  width: 40px;
+  height: 40px;
+}
+
+.exchanger-card-inner {
+  width: 95%;
+}
+
+#currency-exchange {
+  padding-top: 100px;
+}
+
+@media (max-width: 768px) {
+  .exchange-card-image {
+    width: 40px;
+    height: 40px;
+  }
+  .col-res {
+    flex-direction: column;
+  }
+}
+#beCustomer {
+  background-color: #FFECF0;
+  padding-top: 100px;
+  background-image: url("../images/accounts.jpg");
+  background-position: 100% 0;
+  padding-bottom: 100px;
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: contain;
+}
+
+.rekvisites-card-inner {
+  background-color: #fff;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.07);
+  padding: 20px;
+}
+
+.rekvisites-card-inner-icon {
+  font-size: 60px;
+  padding-left: 40px;
+  color: #058d66;
+}
+
+.rekvisites-cards-wrapper {
+  padding-bottom: 20px;
+  gap: 20px;
+}
+
+.accForBusinessAdvantages-icons {
+  color: #058d66;
+  font-size: 60px;
+}
+
+.accForBusinessAdvantages-card {
+  margin-bottom: 20px;
+}
+
+.be-customer-button {
+  font-size: 20px;
+  padding: 10px;
+}
+
+#howToStarBusiness {
+  flex-direction: column;
+  justify-content: center;
+  background-color: #4e5251;
+  color: #fff;
+  background-image: url(../images/kob-bg.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 456px;
+}
+
+.howToStarBusiness-innerText {
+  margin-right: 100px;
+}
+
+.how-to-start-business {
+  padding: 60px 0;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 400;
+}
+
+.howToStarBusiness-innerText-wrapper {
+  margin-bottom: 70px;
+}
+
+#packets {
+  margin-bottom: 60px;
+}
+
+#most-asked-questions {
+  padding-bottom: 100px;
+}

@@ -1,0 +1,36 @@
+@mixin section-header-h {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.25px;
+}
+
+@mixin section-header-wrapper {
+    width: 50%;
+}
+
+@mixin read-more-main-mixin {
+    display: inline-block;
+    font-size: 15px;
+    color: $green;
+}
+
+@media (max-width: 768px) {
+    @mixin section-header-wrapper {
+        width: 100%;
+    }
+}
+
+@mixin backgroundPhotoSettings {
+
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: contain;
+}
+
+
+@mixin be-customer-button {
+    font-size: 20px;
+    padding: 10px;
+
+}
