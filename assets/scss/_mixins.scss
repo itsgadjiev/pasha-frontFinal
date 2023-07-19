@@ -34,3 +34,10 @@
     padding: 10px;
 
 }
+
+@mixin main-button {
+    background: $green;
+    color: #fff;
+    background-position: 50%;
+    transition: background .7s, color .4s;
+}

@@ -89,9 +89,15 @@ body {
 }
 
 .section-header-p-accForBusiness {
+    color: rgba(0, 0, 0, .6);
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     letter-spacing: .5px;
     width: 60%;
+}
+
+.main-button {
+    @include main-button;
+    padding: 10px 15px;
 }
