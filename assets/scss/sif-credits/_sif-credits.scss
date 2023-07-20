@@ -1,0 +1,36 @@
+#sif-credits {
+    padding-top: 100px;
+
+    background-image: url('../images/Slider.png');
+}
+
+.breadcrumb-item {
+    a {
+        text-decoration: none;
+        color: grey;
+    }
+}
+
+.sif-info {
+    padding-top: 80px;
+}
+
+.sif-header {
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 32px;
+}
+
+.sif-table {
+    border: 1px solid rgba(128, 128, 128, 0.356);
+
+    padding: 30px;
+}
+
+.sif-table-text {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: .15px;
+    color: rgba(0, 0, 0, .87);
+    padding-bottom: 30px !important;
+}

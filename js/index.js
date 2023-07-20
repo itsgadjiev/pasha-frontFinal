@@ -17,3 +17,9 @@ $('.owl-carousel').owlCarousel({
 })
 
 
+$(document).ready(function () {
+    $(".detailed-btn-2").on("click", function () {
+        const card = $(this).closest(".online-business-card");
+        card.find(".detailed-section").toggleClass("d-none");
+    });
+});

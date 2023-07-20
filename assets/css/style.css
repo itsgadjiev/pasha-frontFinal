@@ -112,6 +112,127 @@ body {
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.07);
 }
 
+.bg-none {
+  background-image: unset !important;
+}
+
+body {
+  background-color: #FAFAFA;
+}
+
+.wrap-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap-col {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.container-95 {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.nowrap-row {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.section-header-wrapper {
+  padding-bottom: 30px;
+}
+
+.read-more-main {
+  display: inline-block;
+  font-size: 15px;
+  color: #058d66;
+}
+
+.green-span {
+  color: #058d66;
+}
+
+.dnone-large {
+  display: none;
+}
+
+.dflex-large {
+  display: flex;
+}
+
+.dblock-large {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .scroll-on-responsive {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 24px;
+    gap: 20px;
+  }
+  .dnone-small {
+    display: none;
+  }
+  .dflex-small {
+    display: flex;
+  }
+  .dblock-small {
+    display: block;
+  }
+}
+.section-header-h-accForBusiness {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: unset !important;
+  font-weight: 350;
+}
+
+.section-header-p-accForBusiness {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  width: 60%;
+}
+
+.main-button {
+  background: #058d66;
+  color: #fff;
+  background-position: 50%;
+  transition: background 0.7s, color 0.4s;
+  padding: 10px 15px;
+}
+
+.salaryCards-section-padding {
+  padding-top: 100px !important;
+}
+
+.salary-cards-p {
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 24px;
+}
+
+.bow-shadow {
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.07);
+}
+
+.bg-none {
+  background-image: unset !important;
+}
+
 header {
   width: 100%;
   z-index: 15;
@@ -191,6 +312,165 @@ header {
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
+}
+
+footer {
+  background-color: white !important;
+}
+
+.footer-logo {
+  width: 100%;
+}
+.footer-logo img {
+  width: 50%;
+}
+
+.footer-contact {
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+
+.footer-redirects-row .col-3 ul {
+  padding-left: 0;
+}
+.footer-redirects-row .col-3 ul li {
+  list-style: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.38);
+  padding: 3px;
+  cursor: pointer;
+}
+.footer-redirects-row .col-3 ul li:hover {
+  color: rgba(133, 129, 129, 0.753);
+}
+
+.footer-icon {
+  padding-top: 10px;
+  font-size: 30px;
+  padding-right: 20px;
+}
+
+.footer-copyright {
+  padding: 20px;
+  border-top: 1px solid rgba(128, 128, 128, 0.164);
+}
+
+.grey-span {
+  color: rgba(0, 0, 0, 0.38);
+}
+
+@media (max-width: 768px) {
+  .icons {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+#main-slider {
+  padding-top: 100px;
+  z-index: -100;
+}
+
+.slider {
+  z-index: -100;
+  height: 500px;
+}
+.slider .item {
+  width: 100%;
+  height: 100%;
+  min-height: 504px;
+  padding-top: 104px;
+  background-position: 80% 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slider-image-main {
+  width: 10%;
+  object-fit: contain;
+}
+
+.slider-p-tag {
+  width: 50%;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.38);
+  margin-bottom: 40px;
+}
+
+.slider-h-tag {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: unset !important;
+  margin-bottom: 30px;
+  width: 50%;
+}
+
+.owl-theme .owl-nav {
+  top: 40%;
+  position: absolute !important;
+  width: 100% !important;
+}
+
+.owl-prev {
+  height: 0;
+  margin: 0 !important;
+  position: absolute !important;
+  left: 5% !important;
+}
+.owl-prev:hover {
+  background-color: rgba(57, 117, 0, 0.096) !important;
+}
+.owl-prev span {
+  border-radius: 20%;
+  display: inline-block;
+  height: 0;
+  color: #058d66;
+  font-size: 60px;
+}
+.owl-prev span:hover {
+  background-color: rgba(112, 3, 3, 0.075) !important;
+}
+
+.owl-next {
+  height: 0;
+  margin: 0 !important;
+  position: absolute !important;
+  right: 10% !important;
+}
+.owl-next:hover {
+  background-color: rgba(57, 117, 0, 0.096) !important;
+}
+.owl-next span {
+  border-radius: 20%;
+  display: inline-block;
+  height: 0;
+  color: #058d66;
+  font-size: 60px;
+}
+.owl-next span:hover {
+  background-color: rgba(112, 3, 3, 0.075) !important;
+}
+
+.item-1 {
+  background-image: url("../images/salary-cards.png");
+  background-color: antiquewhite;
+}
+
+.item-2 {
+  background-image: url("../images/salary-cards-tariffs.png");
+  background-color: rgb(236, 236, 255);
+}
+
+.item-3 {
+  background-image: url("../images/salary-cards.png");
+  background-color: rgb(255, 255, 176);
 }
 
 .section-header-h {
@@ -450,62 +730,6 @@ header {
     width: 40%;
   }
 }
-footer {
-  background-color: white !important;
-}
-
-.footer-logo {
-  width: 100%;
-}
-.footer-logo img {
-  width: 50%;
-}
-
-.footer-contact {
-  height: 100%;
-  align-items: center;
-  display: flex;
-}
-
-.footer-redirects-row .col-3 ul {
-  padding-left: 0;
-}
-.footer-redirects-row .col-3 ul li {
-  list-style: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.25px;
-  color: rgba(0, 0, 0, 0.38);
-  padding: 3px;
-  cursor: pointer;
-}
-.footer-redirects-row .col-3 ul li:hover {
-  color: rgba(133, 129, 129, 0.753);
-}
-
-.footer-icon {
-  padding-top: 10px;
-  font-size: 30px;
-  padding-right: 20px;
-}
-
-.footer-copyright {
-  padding: 20px;
-  border-top: 1px solid rgba(128, 128, 128, 0.164);
-}
-
-.grey-span {
-  color: rgba(0, 0, 0, 0.38);
-}
-
-@media (max-width: 768px) {
-  .icons {
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-}
 #last-news {
   padding: 150px 0px;
 }
@@ -650,109 +874,6 @@ footer {
   font-weight: 400;
 }
 
-#main-slider {
-  padding-top: 100px;
-  z-index: -100;
-}
-
-.slider {
-  z-index: -100;
-  height: 500px;
-}
-.slider .item {
-  width: 100%;
-  height: 100%;
-  min-height: 504px;
-  padding-top: 104px;
-  background-position: 80% 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.slider-image-main {
-  width: 10%;
-  object-fit: contain;
-}
-
-.slider-p-tag {
-  width: 50%;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  color: rgba(0, 0, 0, 0.38);
-  margin-bottom: 40px;
-}
-
-.slider-h-tag {
-  font-size: 48px;
-  line-height: 56px;
-  letter-spacing: unset !important;
-  margin-bottom: 30px;
-  width: 50%;
-}
-
-.owl-theme .owl-nav {
-  top: 40%;
-  position: absolute !important;
-  width: 100% !important;
-}
-
-.owl-prev {
-  height: 0;
-  margin: 0 !important;
-  position: absolute !important;
-  left: 5% !important;
-}
-.owl-prev:hover {
-  background-color: rgba(57, 117, 0, 0.096) !important;
-}
-.owl-prev span {
-  border-radius: 20%;
-  display: inline-block;
-  height: 0;
-  color: #058d66;
-  font-size: 60px;
-}
-.owl-prev span:hover {
-  background-color: rgba(112, 3, 3, 0.075) !important;
-}
-
-.owl-next {
-  height: 0;
-  margin: 0 !important;
-  position: absolute !important;
-  right: 10% !important;
-}
-.owl-next:hover {
-  background-color: rgba(57, 117, 0, 0.096) !important;
-}
-.owl-next span {
-  border-radius: 20%;
-  display: inline-block;
-  height: 0;
-  color: #058d66;
-  font-size: 60px;
-}
-.owl-next span:hover {
-  background-color: rgba(112, 3, 3, 0.075) !important;
-}
-
-.item-1 {
-  background-image: url("../images/salary-cards.png");
-  background-color: antiquewhite;
-}
-
-.item-2 {
-  background-image: url("../images/salary-cards-tariffs.png");
-  background-color: rgb(236, 236, 255);
-}
-
-.item-3 {
-  background-image: url("../images/salary-cards.png");
-  background-color: rgb(255, 255, 176);
-}
-
 #salaryCards-advantages {
   padding-top: 50px;
 }
@@ -871,4 +992,37 @@ footer {
 }
 .rate-card-inner-button button {
   width: 90%;
+}
+
+#sif-credits {
+  padding-top: 100px;
+  background-image: url("../images/Slider.png");
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: grey;
+}
+
+.sif-info {
+  padding-top: 80px;
+}
+
+.sif-header {
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 32px;
+}
+
+.sif-table {
+  border: 1px solid rgba(128, 128, 128, 0.356);
+  padding: 30px;
+}
+
+.sif-table-text {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+  padding-bottom: 30px !important;
 }
