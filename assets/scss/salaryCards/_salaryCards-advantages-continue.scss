@@ -1,0 +1,41 @@
+#salaryCards-advantages-continue {
+    padding-bottom: 200px;
+}
+
+.salaryCards-advantages-options {
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.247);
+
+}
+
+.salary-advantages-redirects {
+    text-decoration: none;
+
+    margin-right: 20px;
+    color: $grey;
+
+    &:hover {
+        border-bottom: 2px solid $green;
+    }
+}
+
+.active-salary-advantages-redirects {
+    color: black;
+    border-bottom: 2px solid $green;
+
+}
+
+.salaryCards-advantages-options-cards-inner {
+    padding: 13px 5px;
+
+    svg {
+        width: 100%;
+        display: flex;
+        align-content: center;
+    }
+}
+
+
+
+.salaryCards-advantages-options-cards-inner {
+    margin-right: 20px;
+}
