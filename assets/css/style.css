@@ -811,4 +811,64 @@ footer {
 
 .salaryCards-advantages-options-cards-inner {
   margin-right: 20px;
+  min-height: 168px;
+}
+
+.salaryCards-advantages-options-cards-outer {
+  min-height: 168px;
+}
+
+.rate-card-inner-mid {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(128, 128, 128, 0.158);
+  padding: 20px;
+}
+
+.rate-card-out {
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.rate-card-inner-top {
+  padding: 20px;
+}
+
+.rate-card-inner-info-price {
+  color: #058d66;
+  font-size: 30px;
+}
+
+.rate-card-percent {
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.38);
+}
+
+.rate-card-inner-table ul {
+  list-style: none;
+}
+.rate-card-inner-table ul li {
+  color: rgba(0, 0, 0, 0.38);
+  padding-top: 10px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+.rate-card-inner-table ul li:before {
+  content: "✓";
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  color: #058d66;
+}
+
+.rate-card-inner-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.rate-card-inner-button button {
+  width: 90%;
 }

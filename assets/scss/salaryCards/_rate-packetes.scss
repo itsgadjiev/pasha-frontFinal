@@ -1,0 +1,62 @@
+.rate-card-inner-mid {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(128, 128, 128, 0.158);
+    padding: 20px;
+
+}
+
+.rate-card-out {
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.rate-card-inner-top {
+    padding: 20px;
+}
+
+.rate-card-inner-info-price {
+    color: $green;
+    font-size: 30px;
+}
+
+.rate-card-percent {
+    font-size: 30px;
+    color: $grey;
+}
+
+.rate-card-inner-table {
+    ul {
+        list-style: none;
+
+        li {
+            color: $grey;
+            padding-top: 10px;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 20px;
+            letter-spacing: .25px;
+        }
+    }
+
+    ul li:before {
+        content: "\2713";
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+        color: $green;
+
+    }
+}
+
+.rate-card-inner-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    button {
+        width: 90%;
+
+    }
+}
