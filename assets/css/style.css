@@ -99,6 +99,20 @@ body {
   padding: 10px 15px;
 }
 
+.bg-white {
+  background: white;
+  color: #058d66;
+  background-position: 50%;
+  transition: background 0.7s, color 0.4s;
+  border: none;
+  padding: 10px 15px;
+}
+
+.w-40 {
+  width: 30%;
+  margin: 0 auto;
+}
+
 .salaryCards-section-padding {
   padding-top: 100px !important;
 }
@@ -237,6 +251,20 @@ body {
   background-position: 50%;
   transition: background 0.7s, color 0.4s;
   padding: 10px 15px;
+}
+
+.bg-white {
+  background: white;
+  color: #058d66;
+  background-position: 50%;
+  transition: background 0.7s, color 0.4s;
+  border: none;
+  padding: 10px 15px;
+}
+
+.w-40 {
+  width: 30%;
+  margin: 0 auto;
 }
 
 .salaryCards-section-padding {
@@ -899,6 +927,10 @@ footer {
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.07);
 }
 
+.online-business-card-second {
+  background-image: url("../images/saqqal.png");
+}
+
 .white-bg {
   background-color: white;
   border: none;
@@ -1146,6 +1178,27 @@ footer {
   bottom: 20px;
 }
 
+.monthly-price-business {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.price-business {
+  font-size: 30px;
+}
+
+.price-business-percent {
+  font-size: 30px;
+}
+
+#calculator {
+  background-color: white !important;
+  padding-bottom: 50px;
+}
+
 #online-business {
   padding-top: 100px;
   background-color: aliceblue;
@@ -1162,4 +1215,87 @@ footer {
   font-size: 20px !important;
   color: black !important;
   margin-bottom: 20px;
+}
+
+.modal-wrapper-info:hover .modal-info {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-wrapper-info {
+  position: relative;
+  display: inline-block;
+}
+
+.fa-circle-info {
+  padding-left: 7px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.modal-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  overflow: hidden;
+  z-index: 1222;
+  padding: 4px;
+}
+.modal-info p {
+  font-size: 12px;
+  padding: 0 !important;
+  margin-top: 0 !important;
+}
+
+.show-modal .modal-info {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.docs-ul {
+  width: 100%;
+  margin-bottom: 0px;
+  padding: 0;
+}
+.docs-ul li {
+  padding: 40px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.308);
+}
+
+.needed-docs-table {
+  margin-top: 30px;
+  border: 1px solid rgba(147, 147, 150, 0.322);
+  padding: 0px;
+  border-radius: 25px;
+}
+
+.needed-docs-table-col-one h6 {
+  font-size: 20px;
+  padding: 10px 40px;
+}
+
+.customer-quote {
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 28px;
+  letter-spacing: 0.15px;
+}
+
+.customer-name {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.customer-role {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.6);
 }

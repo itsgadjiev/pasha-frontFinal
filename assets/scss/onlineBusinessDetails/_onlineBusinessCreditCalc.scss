@@ -70,3 +70,25 @@
     position: relative;
     bottom: 20px;
 }
+
+.monthly-price-business {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: .25px;
+    color: rgba(0, 0, 0, .6);
+}
+
+.price-business {
+    font-size: 30px;
+}
+
+.price-business-percent {
+    font-size: 30px;
+
+}
+
+#calculator {
+    background-color: white !important;
+    padding-bottom: 50px;
+}

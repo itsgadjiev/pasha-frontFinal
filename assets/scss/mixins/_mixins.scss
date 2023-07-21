@@ -41,3 +41,11 @@
     background-position: 50%;
     transition: background .7s, color .4s;
 }
+
+@mixin white-button {
+    background: white;
+    color: $green;
+    background-position: 50%;
+    transition: background .7s, color .4s;
+    border: none;
+}

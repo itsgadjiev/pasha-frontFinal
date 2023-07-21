@@ -49,9 +49,12 @@
                 </div>
                 <div class="nowrap-row">
 
-                    <div class="logo">
-                        <img src="./assets/images/pblogo.png" alt="logo">
-                    </div>
+
+                    <a href="./index.html">
+                        <div class="logo">
+                            <img src="./assets/images/pblogo.png" alt="logo">
+                        </div>
+                    </a>
                     <div class="header-navigation">
                         <ul class=" nowrap-row">
                             <li><a href="#">Biznes üçün xidmətlər</a></li>
@@ -208,31 +211,404 @@
 
 
     <section id="calculator">
-        <div class="range-slider">
-            <div class="range-slider__textbox">
-                <label class="range-slider__textbox__label" for="amount-text-input">
-                    Arzuolunan məbləğ
-                </label>
-                <input id="amount-text-input" step="1000" type="text" class="range-slider__textbox__input">
-                <div class="range-slider__textbox__postfix"></div>
+        <div class="container">
+            <div class="section-header-wrapper ">
+                <h2 class="section-header-h-accForBusiness pt-5">Biznes kredit kalkulyatoru</h2>
             </div>
-            <input type="range" id="amount-range-input" class="range-slider__input" min="5000" max="250000" value="5000"
-                data-min-value-unit="AZN" data-max-value-unit="AZN">
-            <div class="range-slider__progress"></div>
-            <div class="range-slider__ranges"> <span>5&nbsp;000 AZN</span> <span>250&nbsp;000 AZN</span> </div>
+            <div class="nowrap-row justify-content-between">
+
+                <div class="col-5">
+
+                    <div class="range-slider">
+                        <div class="range-slider__textbox">
+                            <label class="range-slider__textbox__label" for="amount-text-input">
+                                Arzuolunan məbləğ
+                            </label>
+                            <input id="amount-text-input" step="1000" type="text" class="range-slider__textbox__input">
+                            <div class="range-slider__textbox__postfix"></div>
+                        </div>
+                        <input type="range" id="amount-range-input" class="range-slider__input" min="5000" max="250000"
+                            value="5000" data-min-value-unit="AZN" data-max-value-unit="AZN">
+                        <div class="range-slider__progress"></div>
+                        <div class="range-slider__ranges"> <span>5&nbsp;000 AZN</span> <span>250&nbsp;000 AZN</span>
+                        </div>
+                    </div>
+
+                    <div class="range-slider">
+                        <div class="range-slider__textbox">
+                            <label class="range-slider__textbox__label" for="term-text-input">Müddət (aylarla)</label>
+                            <input id="term-text-input" type="text" class="range-slider__textbox__input"
+                                readonly="readonly">
+                            <div class="range-slider__textbox__postfix"></div>
+                        </div>
+                        <input type="range" id="term-range-input" class="range-slider__input" min="3" max="24" value="3"
+                            data-min-value-unit="ay" data-max-value-unit="ay">
+                        <div class="range-slider__progress"></div>
+                        <div class="range-slider__ranges"> <span>3 ay</span> <span>24 ay</span> </div>
+
+                        <button class="btn btn-success  be-customer-button mt-3 w-100"> Müraciət Et</button>
+
+                    </div>
+
+                </div>
+
+                <div class="col-5">
+                    <h6 class="monthly-price-business">Aylıq ödəniş</h6>
+                    <span class="price-business"></span>
+                    <h6 class="monthly-price-business mt-5">İllik faiz dərəcəsi*</h6>
+                    <span class="price-business-percent ">0</span>
+                    <h6 class="monthly-price-business mt-2">*Hesablanmış nəticə yalnız məlumat məqsədi daşıyır</h6>
+                </div>
+
+            </div>
         </div>
 
-        <div class="range-slider">
-            <div class="range-slider__textbox">
-                <label class="range-slider__textbox__label" for="term-text-input">Müddət (aylarla)</label>
-                <input id="term-text-input" type="text" class="range-slider__textbox__input" readonly="readonly">
-                <div class="range-slider__textbox__postfix"></div>
+
+    </section>
+
+
+    <section id="accForBusinessAdvantages">
+        <div class="container">
+            <div class="section-header-wrapper ">
+                <h2 class="section-header-h-accForBusiness pt-5">Üstünlüklər</h2>
             </div>
-            <input type="range" id="term-range-input" class="range-slider__input" min="3" max="24" value="3"
-                data-min-value-unit="ay" data-max-value-unit="ay">
-            <div class="range-slider__progress"></div>
-            <div class="range-slider__ranges"> <span>3 ay</span> <span>24 ay</span> </div>
+
+            <div class="accForBusinessAdvantages-card-wrapper wrap-row">
+                <div class="col-3 nowrap-row accForBusinessAdvantages-card">
+                    <div class="col-2">
+                        <i class="fa-solid fa-compass accForBusinessAdvantages-icons"></i>
+                    </div>
+                    <div class="col-9">
+                        <div class="accForBusinessAdvantages-card-text">
+                            <p class="section-header-p-accForBusiness w-100 px-3"> Hesabınızı dünyanın istənilən
+                                nöqtəsindən,</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3 nowrap-row accForBusinessAdvantages-card">
+                    <div class="col-2">
+                        <i class="fa-solid fa-compass accForBusinessAdvantages-icons"></i>
+                    </div>
+                    <div class="col-9">
+                        <div class="accForBusinessAdvantages-card-text">
+                            <p class="section-header-p-accForBusiness w-100 px-3">Hesabınızı dünyanın istənilən
+                                nöqtəsindən,</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3 nowrap-row accForBusinessAdvantages-card">
+                    <div class="col-2">
+                        <i class="fa-solid fa-compass accForBusinessAdvantages-icons"></i>
+                    </div>
+                    <div class="col-9">
+                        <div class="accForBusinessAdvantages-card-text">
+                            <p class="section-header-p-accForBusiness w-100 px-3"> Hesabınızı dünyanın istənilən
+                                nöqtəsindən,</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3 nowrap-row accForBusinessAdvantages-card ">
+                    <div class="col-2">
+                        <i class="fa-solid fa-compass accForBusinessAdvantages-icons"></i>
+                    </div>
+                    <div class="col-9">
+                        <div class="accForBusinessAdvantages-card-text">
+                            <p class="section-header-p-accForBusiness w-100 px-3"> Hesabınızı dünyanın istənilən
+                                nöqtəsindən,
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
         </div>
+    </section>
+
+    <section id="needed-docs">
+        <div class="container">
+            <div class="section-header-wrapper ">
+                <h2 class="section-header-h-accForBusiness pt-5">Üstünlüklər</h2>
+            </div>
+            <div class="wrap-row salaryCards-advantages-options ">
+                <a class="salary-advantages-redirects table-docs-redirect active-salary-advantages-redirects" href="">
+                    Lazımi sənədlər və borcalana qarşı tələblər
+
+                </a>
+                <a class="salary-advantages-redirects table-credits-credentials-redirect" href="">
+                    Kredit şərtləri
+                </a>
+
+            </div>
+            <div class="table-docs ">
+                <div class="needed-docs-table nowrap-row justify-content-between">
+                    <div class="needed-docs-table-col-one col-6">
+                        <h6>Sənədlər
+                            <div class="modal-wrapper-info">
+                                <i class="fa-solid fa-circle-info"></i>
+                                <div class="modal-info">
+                                    <p>This is the text inside the modal. Lorem ipsum dolor sit amet consectetur,
+                                        adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </h6>
+                        <ul class="global-ul docs-ul">
+                            <li>Bank hesablarından çıxarış
+                                <div class="modal-wrapper-info">
+
+
+                                </div>
+                            </li>
+                            <li>Bank hesablarından çıxarış
+                                <div class="modal-wrapper-info">
+
+                                </div>
+                            </li>
+                            <li>Bank hesablarından çıxarış
+                                <div class="modal-wrapper-info">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <div class="modal-info">
+                                        <p>This is the text inside the modal. Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>Bank hesablarından çıxarış
+                                <div class="modal-wrapper-info">
+
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="needed-docs-table-col-one col-6">
+                        <h6>Sənədlər
+                            <div class="modal-wrapper-info">
+
+                            </div>
+                        </h6>
+                        <ul class="global-ul docs-ul">
+                            <li>Bank hesablarından çıxarış
+                                <div class="modal-wrapper-info">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <div class="modal-info">
+                                        <p> Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit.sit amet consectetur,
+                                            adipisicing elit..</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>Bank hesablarından çıxarış
+                                <div class="modal-wrapper-info">
+
+                                </div>
+                            </li>
+                            <li>Bank hesablarından çıxarış
+                                <div class="modal-wrapper-info">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <div class="modal-info">
+                                        <p> Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit.sit amet consectetur,
+                                            adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>Bank hesablarından çıxarış
+                                <div class="modal-wrapper-info">
+
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-credits-credentials d-none">
+                <div class="needed-docs-table nowrap-row justify-content-between">
+                    <div class="needed-docs-table-col-one col-6">
+                        <h6>Sənədlər 2
+                            <div class="modal-wrapper-info">
+                                <i class="fa-solid fa-circle-info"></i>
+                                <div class="modal-info">
+                                    <p>This is the text inside the modal. Lorem ipsum dolor sit amet consectetur,
+                                        adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </h6>
+                        <ul class="global-ul docs-ul">
+                            <li>Bank hesablarına girish
+                                <div class="modal-wrapper-info">
+
+
+                                </div>
+                            </li>
+                            <li>Bank hesablarına girish
+                                <div class="modal-wrapper-info">
+
+                                </div>
+                            </li>
+                            <li>Bank hesablarına girish
+                                <div class="modal-wrapper-info">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <div class="modal-info">
+                                        <p>This is the text inside the modal. Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>Bank hesablarına girish
+                                <div class="modal-wrapper-info">
+
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="needed-docs-table-col-one col-6">
+                        <h6>Sənədlər 2
+                            <div class="modal-wrapper-info">
+
+                            </div>
+                        </h6>
+                        <ul class="global-ul docs-ul">
+                            <li>Bank hesablarına girish
+                                <div class="modal-wrapper-info">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <div class="modal-info">
+                                        <p> Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit.sit amet consectetur,
+                                            adipisicing elit..</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>Bank hesablarına girish
+                                <div class="modal-wrapper-info">
+
+                                </div>
+                            </li>
+                            <li>Bank hesablarına girish
+                                <div class="modal-wrapper-info">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <div class="modal-info">
+                                        <p> Lorem ipsum dolor sit amet consectetur,
+                                            adipisicing elit.sit amet consectetur,
+                                            adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>Bank hesablarına girish
+                                <div class="modal-wrapper-info">
+
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="what-our-customers-says">
+        <div class="container">
+            <div class="nowrap-row justify-content-between  customer-1  ">
+                <div class="col-6">
+                    <div class="section-header-wrapper  w-100 ">
+                        <h2 class="section-header-h-accForBusiness pt-5">Müştərilər haqqımızda nə deyir?</h2>
+                    </div>
+                    <p class="customer-quote my-3">“ASAN İmza ilə bütün sənədləri imzalayırsınız, bu da 5 dəqiqə
+                        vaxtınızı
+                        alır və 250 000 AZN-dək pul maksimum 1-2 günə hesabınızdadır.”</p>
+                    <h6 class="customer-name">Xanoğlan Ramazanov</h6>
+                    <span class="customer-role">Direktor – “Qanun Mühasibatlıq Xidmətləri”</span>
+                </div>
+                <div class="col-5 customer-video-background pt-5">
+                    <a class="customer-video-href" href="">
+                        <iframe width="564" height="350" src="https://www.youtube.com/embed/E2GTbcJnkSU"
+                            title="Müştərilərimizdən rəylər - Xanoğlan Ramazanov" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="nowrap-row justify-content-between  customer-2  ">
+                <div class="col-6">
+                    <div class="section-header-wrapper  w-100 ">
+                        <h2 class="section-header-h-accForBusiness pt-5">Müştərilər haqqımızda nə deyir?</h2>
+                    </div>
+                    <p class="customer-quote my-3">Biznesdə əsas odur ki, hər şey vaxtında olsun. “PASHA Bank” bizə hər
+                        zaman vaxtında kömək edir.”</p>
+                    <h6 class="customer-name">Nazim Şükürov</h6>
+                    <span class="customer-role">Təsisçi – “Bouquet & Co və Torte.az”</span>
+                </div>
+                <div class="col-5 customer-video-background pt-5">
+                    <a class="customer-video-href" href="">
+                        <iframe width="564" height="350" src="https://www.youtube.com/embed/hndqIdjBZGE"
+                            title="Müştərilərimizdən rəylər - Nazim Şükürov" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="sif-credits">
+        <div class="container">
+            <div class="sif-credits-wrapper nowrap-row">
+                <div class="col-6">
+                    <div class="sif-image-wrapper">
+                        <img src="./assets/images/telefonlu kishi.png" alt="">
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="sif-info">
+                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="./index.html">Ana Səhifə</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Onlayn biznes krediti</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <h1 class="sif-header">Onlayn biznes krediti</h1>
+
+                    <p class=" section-header-p-accForBusiness">Hesab üzrə rekvizitlərinizi dərhal əldə edin.
+                    </p>
+
+                    <div class="nowrap-row  mt-5">
+
+                        <div class="w-40">
+                            <button class="btn btn-success   "> PASHA BANK
+                                ISTIFADECISIYEM</button>
+
+                        </div>
+
+                        <div class="w-40">
+                            <button class="btn btn-success  bg-white"> PASHA BANK
+                                ISTIFADECISI
+                                DEYILEM</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
     </section>
 
 </body>

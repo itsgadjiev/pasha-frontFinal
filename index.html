@@ -20,6 +20,12 @@
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <script src="./js/slider/owl.carousel.min.js" defer></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.all.min.js
+"></script>
+    <link href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.min.css
+" rel="stylesheet">
     <!-- main files -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./js/index.js" defer></script>
@@ -47,9 +53,12 @@
                 </div>
                 <div class="nowrap-row">
 
-                    <div class="logo">
-                        <img src="./assets/images/pblogo.png" alt="logo">
-                    </div>
+
+                    <a href="./index.html">
+                        <div class="logo">
+                            <img src="./assets/images/pblogo.png" alt="logo">
+                        </div>
+                    </a>
                     <div class="header-navigation">
                         <ul class=" nowrap-row">
                             <li><a href="#">Biznes üçün xidmətlər</a></li>
@@ -166,7 +175,7 @@
                                 </li>
                             </ul>
 
-                            <a href="">
+                            <a href="./accForBusiness.html">
                                 Daha ətraflı <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
@@ -185,7 +194,7 @@
                                 </li>
                             </ul>
 
-                            <a href="">
+                            <a href="./onlineBusiness.html">
                                 Daha ətraflı <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
@@ -204,7 +213,7 @@
                                 </li>
                             </ul>
 
-                            <a href="" class="read-more-main">
+                            <a href="./salaryCards.html" class="read-more-main">
                                 Daha ətraflı <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
@@ -408,7 +417,10 @@
                                 </ul>
 
                                 <button class="btn white-btn mb-3">Daha Ətraflı</button>
-                                <button class="btn btn-success green-btn">Daha Ətraflı</button>
+                                <button class="btn btn-success green-btn open-acc"
+                                    onclick="openAccount('Dəstək', '0')">Hesab Aç</button>
+
+
 
                             </div>
                         </div>
@@ -417,13 +429,13 @@
                         <div class="business-plans-wrapper-card">
                             <div class="container">
 
-                                <h4 class="mb-5">Dəstək</h4>
+                                <h4 class="mb-5">Yüksəl</h4>
 
                                 <div class="business-plans-wrapper-card-image">
                                     <img src="./assets/images/card image.png" alt="">
                                 </div>
 
-                                <h6 class="business-card-price"> 0 <span class="currency-symb">$ <span
+                                <h6 class="business-card-price"> 100 <span class="currency-symb">$ <span
                                             class="monthsly">/aylıq</span></span></h6>
                                 <h6 class="business-plans-wrapper-card-cap">Biznesə yeni başlayırsınız?</h6>
 
@@ -435,7 +447,9 @@
                                 </ul>
 
                                 <button class="btn white-btn mb-3">Daha Ətraflı</button>
-                                <button class="btn btn-success green-btn">Daha Ətraflı</button>
+                                <button class="btn btn-success green-btn open-acc"
+                                    onclick="openAccount('Yüksəl', '100')">Hesab Aç</button>
+
 
                             </div>
                         </div>
@@ -444,13 +458,13 @@
                         <div class="business-plans-wrapper-card">
                             <div class="container">
 
-                                <h4 class="mb-5">Dəstək</h4>
+                                <h4 class="mb-5">Parla</h4>
 
                                 <div class="business-plans-wrapper-card-image">
                                     <img src="./assets/images/card image.png" alt="">
                                 </div>
 
-                                <h6 class="business-card-price"> 0 <span class="currency-symb">$ <span
+                                <h6 class="business-card-price"> 500 <span class="currency-symb">$ <span
                                             class="monthsly">/aylıq</span></span></h6>
                                 <h6 class="business-plans-wrapper-card-cap">Biznesə yeni başlayırsınız?</h6>
 
@@ -462,7 +476,8 @@
                                 </ul>
 
                                 <button class="btn white-btn mb-3">Daha Ətraflı</button>
-                                <button class="btn btn-success green-btn">Daha Ətraflı</button>
+                                <button class="btn btn-success green-btn open-acc"
+                                    onclick="openAccount('Parla', '500')">Hesab Aç</button>
 
                             </div>
                         </div>
@@ -472,7 +487,6 @@
         </div>
     </section>
     <!--Business plans end  -->
-
 
     <!-- mobile app secion start -->
     <section id="mobile-app-main">
@@ -768,6 +782,7 @@
         </div>
 
     </footer>
+
 
 </body>
 

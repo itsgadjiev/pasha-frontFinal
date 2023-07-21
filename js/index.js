@@ -23,3 +23,12 @@ $(document).ready(function () {
         card.find(".detailed-section").toggleClass("d-none");
     });
 });
+
+function openAccount(cardName, cardPrice) {
+    Swal.fire({
+        title: cardName,
+        text: cardPrice + " $ /aylıq",
+        icon: 'success',
+        confirmButtonText: 'OK'
+    });
+}
