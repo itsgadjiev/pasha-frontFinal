@@ -32,3 +32,4 @@ function openAccount(cardName, cardPrice) {
         confirmButtonText: 'OK'
     });
 }
+

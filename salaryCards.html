@@ -23,6 +23,7 @@
     <!-- main files -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./js/index.js" defer></script>
+    <script src="./js/SalaryCards/main.js" defer></script>
     <title>Əmək haqqı kartları | Pasha</title>
 </head>
 
@@ -193,21 +194,21 @@
             </div>
         </section>
 
-
         <section id="salaryCards-advantages-continue" class="salaryCards-section-padding">
             <div class="container">
                 <div class="section-header-wrapper">
                     <h2 class="section-header-h">Üstünlüklər</h2>
                 </div>
                 <div class="wrap-row salaryCards-advantages-options ">
-                    <a class="salary-advantages-redirects" href="">
+                    <a id="advantage-link-1" class="salary-advantages-redirects active-salary-advantages-redirects"
+                        href="">
                         Hüquqi şəxslər və Fərdi sahibkarlar üçün
                     </a>
-                    <a class="salary-advantages-redirects " href="">
+                    <a id="advantage-link-2" class="salary-advantages-redirects second-advanteg-row" href="">
                         Əməkhaqqı kart sahibləri üçün
                     </a>
                 </div>
-                <div class="salaryCards-advantages-options-cards-first-row wrap-row mt-4">
+                <div class="salaryCards-advantages-options-cards-first-row wrap-row mt-4 ">
                     <div class="col-4 salaryCards-advantages-options-cards-outer pe-3">
                         <div class="salaryCards-advantages-options-cards-inner nowrap-row bow-shadow p-4">
                             <div class="col-8">
@@ -261,7 +262,7 @@
                     </div>
                 </div>
 
-                <div class="salaryCards-advantages-options-cards-second-row wrap-row mt-4">
+                <div class="salaryCards-advantages-options-cards-second-row wrap-row mt-4 d-none">
                     <div class="col-4 salaryCards-advantages-options-cards-outer pe-3">
                         <div class="salaryCards-advantages-options-cards-inner nowrap-row bow-shadow p-4">
                             <div class="col-8">
@@ -403,7 +404,9 @@
                             </div>
 
                             <div class="rate-card-inner-button">
-                                <button class="btn btn-success green-btn ">Daha Ətraflı</button>
+                                <button class="btn btn-success green-btn more-detailed-salary"
+                                    onclick="openModal('ILK ADDIMLAR', 'Pulsuz', '0.18%', '0.21%', '0.35%')">Daha
+                                    Ətraflı</button>
 
                             </div>
 
@@ -479,14 +482,16 @@
                             <div class="rate-card-inner-table">
                                 <ul>
                                     <li>Hesab açma: <span class="green-span">Pulsuz</span>
-                                    <li>Ölkədaxili AZN ödənişlə: <span class="green-span">0.18%</span>
-                                    <li>Ölkədaxili təcili AZN ödənişlər: <span class="green-span">0.21%</span>
-                                    <li>Beynəlxalq ödənişlər: <span class="green-span">0.35%</span>
+                                    <li>Ölkədaxili AZN ödənişlə: <span class="green-span">0.22%</span>
+                                    <li>Ölkədaxili təcili AZN ödənişlər: <span class="green-span">0.231%</span>
+                                    <li>Beynəlxalq ödənişlər: <span class="green-span">0.351%</span>
                                 </ul>
                             </div>
 
                             <div class="rate-card-inner-button">
-                                <button class="btn btn-success green-btn ">Daha Ətraflı</button>
+                                <button class="btn btn-success green-btn more-detailed-salary"
+                                    onclick="openModal('Özəl Tariflər', 'Pulsuz', '0.22%', '0.231%', '0.351%')">Daha
+                                    Ətraflı</button>
 
                             </div>
 
@@ -498,7 +503,7 @@
                                 <div class="rate-card-image text-center">
                                     <img src="./assets/images/raket.png" alt="">
                                 </div>
-                                <h4 class="text-center pb-2">ILK ADDIMLAR</h4>
+                                <h4 class="text-center pb-2">GOZEL ADDIMLAR</h4>
                                 <p class="salary-cards-p pb-5 text-center">İlk addımlarınızı bizimlə birgə atın</p>
                                 <div class="rate-card-inner-info nowrap-row justify-content-between">
                                     <div class="rate-card-inner-info-name nowrap-row">
@@ -562,19 +567,33 @@
                             <div class="rate-card-inner-table">
                                 <ul>
                                     <li>Hesab açma: <span class="green-span">Pulsuz</span>
-                                    <li>Ölkədaxili AZN ödənişlə: <span class="green-span">0.18%</span>
-                                    <li>Ölkədaxili təcili AZN ödənişlər: <span class="green-span">0.21%</span>
-                                    <li>Beynəlxalq ödənişlər: <span class="green-span">0.35%</span>
+                                    <li>Ölkədaxili AZN ödənişlə: <span class="green-span">0.30%</span>
+                                    <li>Ölkədaxili təcili AZN ödənişlər: <span class="green-span">0.33%</span>
+                                    <li>Beynəlxalq ödənişlər: <span class="green-span">0.69%</span>
                                 </ul>
                             </div>
 
                             <div class="rate-card-inner-button">
-                                <button class="btn btn-success green-btn mb-4 ">Daha Ətraflı</button>
-
+                                <button class="btn btn-success green-btn more-detailed-salary"
+                                    onclick="openModal('GOZEL ADDIMLAR', 'Pulsuz', '0.30%', '0.33%', '0.69%')">Daha
+                                    Ətraflı</button>
                             </div>
 
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rateModals">
+            <div class="rateModal" id="rateCardModal">
+                <div class="rateModal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2 id="rateModalCardName"></h2>
+                    <p id="rateModalHesabAchma"></p>
+                    <p id="rateModalOlkedaxiliAZN"></p>
+                    <p id="rateModalOlkedaxiliTeciliAZN"></p>
+                    <p id="rateModalBeynelxalqOdenisler"></p>
                 </div>
             </div>
         </section>
